@@ -18,7 +18,7 @@ namespace ConsoleApp.MySQL
             using (var ctx = new Context())
             {
                 CheckMigrations(ctx);
-                var lst = ctx.DataLogs.ToList();
+                var lst = ctx.DataLogs.Where(x=>x.Id.ToString()== "6ae4f127-00ff-47ad-92f5-165543eb8f3c").ToList();
                 //if (!ctx.DataLogs.Any())
                 //{
                 DataLog log = new DataLog();

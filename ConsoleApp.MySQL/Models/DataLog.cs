@@ -65,7 +65,7 @@ namespace ConsoleApp.MySQL.Models
 
         public string Remark { get; set; }
 
-        public string Action { get; set; }
+        public string Action { get; set; } = $"Action{DateTime.Now.ToShortTimeString()}";
 
     }
 
